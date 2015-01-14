@@ -1,0 +1,18 @@
+#!/usr/bin/make -f
+
+include /usr/share/pkg-kde-tools/qt-kde-team/3/debian-qt-kde.mk
+# Enable strict interdependencies
+libpkgs_gen_strict_local_shlibs = $(libpkgs_all_packages)
+include /usr/share/pkg-kde-tools/qt-kde-team/3/library-packages.mk
+
+DEB_HOST_MULTIARCH ?= $(shell dpkg-architecture -qDEB_HOST_MULTIARCH)
+QT5_BUILD_DIR = "obj-$(DEB_HOST_MULTIARCH)-qt5"
+QT5_PACKAGES = $(shell grep Package: debian/control | grep qt5 | grep -v '\-dbg' | sed -e 's/Package: //g')
+QT5_DH_EXCLUDE := $(foreach package, $(QT5_PACKAGES), -N $(package))
+QT5_DH_INCLUDE := $(foreach package, $(QT5_PACKAGES), -p $(package))
+
+override_dh_auto_configure:
+	$(overridden_command) -- -DLIB_SUFFIX="/$(DEB_HOST_MULTIARCH)"
+
+override_dh_strip:
+	$(overridden_command) $(QT5_DH_INCLUDE) --dbg-package=libqca-qt5-2-dbg
