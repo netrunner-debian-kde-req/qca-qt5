@@ -1,3 +1,17 @@
+qca-qt5 (2.1.0.3-0ubuntu3) UNRELEASED; urgency=medium
+
+  * Bump build depend on pkg-kde-tools to (>> 0.15.15) so we make sure we are
+    building against a pkg-kde-tools which provides the kde frameworks
+    module.
+
+ -- José Manuel Santamaría Lema <panfaust@gmail.com>  Wed, 11 Feb 2015 17:51:58 +0100
+
+qca-qt5 (2.1.0.3-0ubuntu2) vivid; urgency=medium
+
+  * Update symbols file
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Wed, 14 Jan 2015 18:46:17 +0100
+
 qca-qt5 (2.1.0.3-0ubuntu1) vivid; urgency=medium
 
   * Initial package of qt5 qca
