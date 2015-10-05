@@ -1,3 +1,9 @@
+qca-qt5 (2.1.0.3-0ubuntu4) wily; urgency=medium
+
+  * update symbols for gcc 5
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Mon, 05 Oct 2015 15:46:56 +0100
+
 qca-qt5 (2.1.0.3-0ubuntu3) wily; urgency=medium
 
   [ José Manuel Santamaría Lema ]
