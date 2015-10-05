@@ -1,0 +1,31 @@
+From 66b9754170759d9333d5fc1e348642814d0310dd Mon Sep 17 00:00:00 2001
+From: Jan Grulich <jgrulich@redhat.com>
+Date: Thu, 17 Sep 2015 16:14:24 +0200
+Subject: [PATCH] Use Q_SLOTS/Q_SIGNALS instead of slots/signals in all headers
+ from include dir REVIEW:125289
+
+---
+ include/QtCrypto/qca_safetimer.h | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/include/QtCrypto/qca_safetimer.h b/include/QtCrypto/qca_safetimer.h
+index 68dde5c..2de0d43 100644
+--- a/include/QtCrypto/qca_safetimer.h
++++ b/include/QtCrypto/qca_safetimer.h
+@@ -44,12 +44,12 @@ public:
+ 	void setSingleShot(bool singleShot);
+ 	int timerId() const;
+ 
+-public slots:
++public Q_SLOTS:
+ 	void start(int msec);
+ 	void start();
+ 	void stop();
+ 
+-signals:
++Q_SIGNALS:
+ 	void timeout();
+ 
+ protected:
+-- 
+2.1.4

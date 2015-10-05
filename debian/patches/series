@@ -3,4 +3,4 @@ pipeunittest_more_wait.diff
 hurd_msync.diff
 kubuntu_ignore_filewatch_test.diff
 kubuntu_mkspecs-dir.diff
-
+use_q_slots-q_signals_instead_of_slots-signals.diff
