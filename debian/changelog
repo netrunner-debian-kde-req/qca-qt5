@@ -1,4 +1,4 @@
-qca-qt5 (2.1.0.3-0ubuntu3) UNRELEASED; urgency=medium
+qca-qt5 (2.1.0.3-0ubuntu3) wily; urgency=medium
 
   [ José Manuel Santamaría Lema ]
   * Bump build depend on pkg-kde-tools to (>> 0.15.15) so we make sure we are
