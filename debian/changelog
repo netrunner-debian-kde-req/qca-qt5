@@ -1,3 +1,9 @@
+qca-qt5 (2.1.1-0ubuntu1) UNRELEASED; urgency=medium
+
+  * Remove upstream patch use_q_slots-q_signals_instead_of_slots-signals.diff
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Fri, 09 Oct 2015 16:32:53 +0100
+
 qca-qt5 (2.1.0.3-0ubuntu4) wily; urgency=medium
 
   * update symbols for gcc 5
