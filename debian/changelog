@@ -1,6 +1,10 @@
 qca-qt5 (2.1.1-0ubuntu1) UNRELEASED; urgency=medium
 
+  [ Jonathan Riddell ]
   * Remove upstream patch use_q_slots-q_signals_instead_of_slots-signals.diff
+
+  [ Scarlett Clark ]
+  * Batchpatch symbols, removed Missing optional symbols. 
 
  -- Jonathan Riddell <jriddell@ubuntu.com>  Fri, 09 Oct 2015 16:32:53 +0100
 
