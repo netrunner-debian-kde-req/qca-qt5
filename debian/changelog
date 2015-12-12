@@ -5,6 +5,7 @@ qca-qt5 (2.1.1-0ubuntu1) UNRELEASED; urgency=medium
 
   [ Scarlett Clark ]
   * Batchpatch symbols, removed Missing optional symbols. 
+  * Create new kubuntu_xenial_archive. 
 
  -- Jonathan Riddell <jriddell@ubuntu.com>  Fri, 09 Oct 2015 16:32:53 +0100
 
